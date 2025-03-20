@@ -17,7 +17,7 @@ namespace Race_Runner_Club.Models
             public string? Image { get; set; }
             [ForeignKey("Addresses")]
             public int? AddressId { get; set; }
-            public Addresses? Address { get; set; }
+            public Address? Address { get; set; }
             public ClubCategory ClubCategory { get; set; }
             [ForeignKey("AppUser")]
             public string? AppUserId { get; set; }

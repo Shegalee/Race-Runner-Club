@@ -1,6 +1,5 @@
 ﻿using Race_Runner_Club.Models;
 using Race_Runner_Club.Models.Data.Enums;
-using RunGroopWebApp.Data.Enum;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,7 +14,7 @@ namespace RunGroopWebApp.Models
         public string? Image { get; set; }
         [ForeignKey("Address")]
         public int? AddressId { get; set; }
-        public Addresses? Address { get; set; }
+        public Address? Address { get; set; }
         public ClubCategory ClubCategory { get; set; }
         [ForeignKey("AppUser")]
         public string? AppUserId { get; set; }
