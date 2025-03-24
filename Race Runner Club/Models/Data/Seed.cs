@@ -1,7 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Identity;
 using Race_Runner_Club.Models.Data.Enums;
-using RunGroopWebApp.Data.Enum;
 using RunGroopWebApp.Models;
 
 namespace Race_Runner_Club.Models.Data
@@ -26,7 +25,7 @@ namespace Race_Runner_Club.Models.Data
                             Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Description = "This is the description of the first cinema",
                             ClubCategory = ClubCategory.City,
-                            Address = new Address()
+                            Address = new Addresses()
                             {
                                 Street = "123 Main St",
                                 City = "Charlotte",
@@ -39,7 +38,7 @@ namespace Race_Runner_Club.Models.Data
                             Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Description = "This is the description of the first cinema",
                             ClubCategory = ClubCategory.Endurance,
-                            Address = new Address()
+                            Address = new Addresses()
                             {
                                 Street = "123 Main St",
                                 City = "Charlotte",
@@ -52,7 +51,7 @@ namespace Race_Runner_Club.Models.Data
                             Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Description = "This is the description of the first club",
                             ClubCategory = ClubCategory.Trail,
-                            Address = new Address()
+                            Address = new Addresses()
                             {
                                 Street = "123 Main St",
                                 City = "Charlotte",
@@ -65,7 +64,7 @@ namespace Race_Runner_Club.Models.Data
                             Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Description = "This is the description of the first club",
                             ClubCategory = ClubCategory.City,
-                            Address = new Address()
+                            Address = new Addresses()
                             {
                                 Street = "123 Main St",
                                 City = "Michigan",
@@ -75,3 +74,5 @@ namespace Race_Runner_Club.Models.Data
                     });
                     context.SaveChanges();
                 }
+            }
+

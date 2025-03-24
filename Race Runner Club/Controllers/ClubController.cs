@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Race_Runner_Club.Models;
 using Race_Runner_Club.Models.Data.Enums;
-using RunGroopWebApp.Data.Enum;
 using RunGroopWebApp.Helpers;
 using RunGroopWebApp.Interfaces;
 using RunGroopWebApp.Models;
-using RunGroopWebApp.ViewModels;
+using Race ViewModels;
 using System.ComponentModel;
 
 namespace RunGroopWebApp.Controllers
